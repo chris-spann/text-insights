@@ -17,7 +17,7 @@ def get_word_freq(coach):
     tokens = word_tokenize(text.lower())
     token_list = token_list + tokens
     frequencies = Counter(token_list)
-    for token, count in frequencies.most_common(25):
+    for token, count in frequencies.most_common(100):
         print(token, count)
 
 
