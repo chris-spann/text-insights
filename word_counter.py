@@ -67,7 +67,6 @@ def new_get_word_freq(coach):
     tokens = word_tokenize(text.lower())
     stemmer = PorterStemmer()
     token_list_stemmed = []
-
     for token in tokens:
         stemmed_token = stemmer.stem(token)
         token_list_stemmed.append(stemmed_token)
